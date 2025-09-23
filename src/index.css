@@ -1,0 +1,472 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lora', Georgia, 'Times New Roman', serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: 
+    radial-gradient(circle at 20% 80%, rgba(0, 212, 255, 0.06) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(0, 212, 255, 0.04) 0%, transparent 50%),
+    linear-gradient(135deg, #0a0e27 0%, #1a1d2e 100%);
+  color: #f8fafc;
+  min-height: 100vh;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1e293b;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #475569;
+}
+
+/* Smooth animations */
+* {
+  transition: all 0.2s ease-in-out;
+}
+
+/* Custom focus styles */
+*:focus {
+  outline: 2px solid #00d4ff;
+  outline-offset: 2px;
+}
+
+/* Glass morphism effect */
+.glass {
+  background: rgba(30, 41, 59, 0.6);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+
+/* Glass card variant */
+.glass-card {
+  background: rgba(30, 41, 59, 0.5);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.25),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  
+}
+
+
+/* Subtle radial background */
+.radial-bg-primary {
+  background: 
+    radial-gradient(circle at 50% 50%, rgba(0, 212, 255, 0.08) 0%, transparent 70%);
+}
+
+/* Gradient text */
+.gradient-text {
+  background: linear-gradient(135deg, #00d4ff 0%, #0ea5e9 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Subtle glow effects */
+.glow-effect {
+  box-shadow: 0 0 20px rgba(0, 212, 255, 0.15);
+}
+
+.glow-effect-danger {
+  box-shadow: 0 0 20px rgba(239, 68, 68, 0.15);
+}
+
+.glow-on-hover {
+  transition: all 0.3s ease;
+}
+
+.glow-on-hover:hover {
+  transform: translateY(-2px);
+  box-shadow: 
+    0 12px 40px rgba(0, 0, 0, 0.3),
+    0 0 20px rgba(0, 212, 255, 0.2);
+}
+
+/* 3D Card Effects */
+.card-3d-subtle {
+  transition: all 0.3s ease;
+}
+
+.card-3d-subtle:hover {
+  transform: translateY(-4px);
+  box-shadow: 
+    0 12px 40px rgba(0, 0, 0, 0.3),
+    0 0 15px rgba(0, 212, 255, 0.1);
+}
+
+/* Interactive glass */
+.interactive-glass {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.interactive-glass:hover {
+  background: rgba(255, 255, 255, 0.05);
+  transform: translateY(-1px);
+}
+
+/* Line clamp utilities */
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Custom scrollbar for activity */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 3px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #475569;
+}
+
+/* Recent Activity specific styles */
+.recent-activity-container {
+  height: 500px;
+}
+
+@media (min-width: 1024px) {
+  .recent-activity-container {
+    height: 600px;
+  }
+}
+
+/* Prose styling for markdown */
+.prose {
+  color: inherit;
+}
+
+.prose p {
+  margin-bottom: 0.5rem;
+}
+
+.prose ul, .prose ol {
+  margin-bottom: 0.5rem;
+}
+
+.prose li {
+  margin-bottom: 0.25rem;
+}
+
+.prose strong {
+  font-weight: 600;
+}
+
+/* Premium Typography Styles */
+h1, .heading-primary {
+  font-family: 'Young Serif', serif;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+h2, .heading-secondary {
+  font-family: 'Roboto Serif', serif;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  line-height: 1.3;
+}
+
+h3, h4, .heading-tertiary {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 1.4;
+}
+
+h5, h6, .heading-small {
+  font-family: 'Lora', serif;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  line-height: 1.4;
+}
+
+p, .body-text {
+  font-family: 'Lora', serif;
+  font-weight: 400;
+  line-height: 1.7;
+  letter-spacing: 0.01em;
+}
+
+.display-text {
+  font-family: 'Roboto Serif', serif;
+  font-weight: 300;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+}
+
+.accent-text {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+/* Enhanced readability for serif fonts */
+.serif-optimized {
+  text-rendering: optimizeLegibility;
+  -webkit-font-feature-settings: "kern" 1, "liga" 1, "calt" 1;
+  font-feature-settings: "kern" 1, "liga" 1, "calt" 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Premium text shadows for depth */
+.text-shadow-sm {
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.text-shadow {
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.text-shadow-lg {
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+/* Elegant letter spacing for different font weights */
+.tracking-elegant {
+  letter-spacing: 0.025em;
+}
+
+.tracking-luxury {
+  letter-spacing: 0.05em;
+}
+
+/* Premium gradient text effects */
+.gradient-text-gold {
+  background: linear-gradient(135deg, #ffd700 0%, #ffed4e 50%, #ffd700 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gradient-text-silver {
+  background: linear-gradient(135deg, #e5e7eb 0%, #f9fafb 50%, #e5e7eb 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Subtle blue accent text */
+.text-blue-glow {
+  color: #00d4ff;
+  text-shadow: 0 0 10px rgba(0, 212, 255, 0.3);
+}
+
+/* Floating animation */
+.floating {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}/* Gla
+ssmorphic Button Styles */
+.btn-glass {
+  background: rgba(30, 41, 59, 0.4);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 
+    0 4px 16px rgba(0, 0, 0, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.btn-glass:hover {
+  background: rgba(30, 41, 59, 0.6);
+  transform: translateY(-2px);
+  box-shadow: 
+    0 8px 24px rgba(0, 0, 0, 0.3),
+    0 0 20px rgba(0, 212, 255, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.15);
+}
+
+.btn-glass-primary {
+  background: rgba(0, 212, 255, 0.15);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(0, 212, 255, 0.3);
+  color: #00d4ff;
+  box-shadow: 
+    0 4px 16px rgba(0, 0, 0, 0.2),
+    0 0 10px rgba(0, 212, 255, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.btn-glass-primary:hover {
+  background: rgba(0, 212, 255, 0.25);
+  transform: translateY(-2px);
+  box-shadow: 
+    0 8px 24px rgba(0, 0, 0, 0.3),
+    0 0 20px rgba(0, 212, 255, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.15);
+}
+
+.btn-glass-danger {
+  background: rgba(239, 68, 68, 0.15);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  color: #ef4444;
+  box-shadow: 
+    0 4px 16px rgba(0, 0, 0, 0.2),
+    0 0 10px rgba(239, 68, 68, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.btn-glass-danger:hover {
+  background: rgba(239, 68, 68, 0.25);
+  transform: translateY(-2px);
+  box-shadow: 
+    0 8px 24px rgba(0, 0, 0, 0.3),
+    0 0 20px rgba(239, 68, 68, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.15);
+}
+
+.btn-glass-success {
+  background: rgba(34, 197, 94, 0.15);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(34, 197, 94, 0.3);
+  color: #22c55e;
+  box-shadow: 
+    0 4px 16px rgba(0, 0, 0, 0.2),
+    0 0 10px rgba(34, 197, 94, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.btn-glass-success:hover {
+  background: rgba(34, 197, 94, 0.25);
+  transform: translateY(-2px);
+  box-shadow: 
+    0 8px 24px rgba(0, 0, 0, 0.3),
+    0 0 20px rgba(34, 197, 94, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.15);
+}
+
+.btn-glass-warning {
+  background: rgba(251, 191, 36, 0.15);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(251, 191, 36, 0.3);
+  color: #fbbf24;
+  box-shadow: 
+    0 4px 16px rgba(0, 0, 0, 0.2),
+    0 0 10px rgba(251, 191, 36, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.btn-glass-warning:hover {
+  background: rgba(251, 191, 36, 0.25);
+  transform: translateY(-2px);
+  box-shadow: 
+    0 8px 24px rgba(0, 0, 0, 0.3),
+    0 0 20px rgba(251, 191, 36, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.15);
+}
+
+/* Cyberpunk accent colors */
+.text-cyber-blue {
+  color: #00d4ff;
+  text-shadow: 0 0 10px rgba(0, 212, 255, 0.5);
+}
+
+.text-cyber-pink {
+  color: #ff0080;
+  text-shadow: 0 0 10px rgba(255, 0, 128, 0.5);
+}
+
+.text-cyber-purple {
+  color: #8b5cf6;
+  text-shadow: 0 0 10px rgba(139, 92, 246, 0.5);
+}
+
+/* Additional Glassmorphic Glow Effects */
+.glow-effect-red {
+  box-shadow: 0 0 20px rgba(239, 68, 68, 0.15);
+}
+
+.glow-effect-green {
+  box-shadow: 0 0 20px rgba(34, 197, 94, 0.15);
+}
+
+.glow-effect-purple {
+  box-shadow: 0 0 20px rgba(139, 92, 246, 0.15);
+}
+
+/* Enhanced 3D Card Effects */
+.card-3d {
+  transition: all 0.3s ease;
+  transform-style: preserve-3d;
+}
+
+.card-3d:hover {
+  transform: translateY(-8px) rotateX(5deg);
+  box-shadow: 
+    0 20px 60px rgba(0, 0, 0, 0.4),
+    0 0 30px rgba(0, 212, 255, 0.1);
+}
+
+dancingbutton {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}

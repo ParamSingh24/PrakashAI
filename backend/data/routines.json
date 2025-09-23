@@ -1,0 +1,359 @@
+[
+  {
+    "id": "auto_routine_1756926895572",
+    "name": "Early Morning AC On",
+    "description": "Turns on the Bedroom Air Conditioner before the user wakes up to restore comfortable temperature, balancing energy saving with user comfort.",
+    "schedule": {
+      "days": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "time": "05:00"
+    },
+    "actions": [
+      {
+        "applianceId": "ac1",
+        "command": "turnOn"
+      }
+    ],
+    "createdBy": "autonomous_ai",
+    "createdAt": "2025-09-03T19:14:55.572Z",
+    "reasoning": "To restore comfortable temperature in the bedroom before the user wakes up, balancing energy saving with user comfort, after the \"Late Night AC Off\" routine.",
+    "isActive": true,
+    "lastExecuted": "2025-09-03T20:43:57.375Z"
+  },
+  {
+    "id": "auto_routine_1756926895574",
+    "name": "Nighttime PC Power Off",
+    "description": "Turns off the Desktop Computer late at night to eliminate phantom load and save energy, assuming it's not in active use.",
+    "schedule": {
+      "time": "23:30"
+    },
+    "actions": [
+      {
+        "applianceId": "pc1",
+        "command": "turnOff"
+      }
+    ],
+    "createdBy": "autonomous_ai",
+    "createdAt": "2025-09-03T19:14:55.574Z",
+    "reasoning": "The Desktop Computer contributes to phantom load. This routine ensures it's turned off during typical non-usage hours, aligning with energy-saving recommendations.",
+    "isActive": true,
+    "modifiedBy": "autonomous_ai",
+    "modifiedAt": "2025-09-04T02:18:34.411Z"
+  },
+  {
+    "id": "auto_routine_1756929431236",
+    "name": "Nighttime Bedroom Light Off",
+    "description": "Turns off the Bedroom Main Light at 11:30 PM daily to prevent accidental leaving on and save energy during typical sleep hours.",
+    "schedule": {
+      "time": "23:30",
+      "days": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ]
+    },
+    "actions": [
+      {
+        "command": "turnOff",
+        "applianceId": "bulb1"
+      }
+    ],
+    "createdBy": "autonomous_ai",
+    "createdAt": "2025-09-03T19:57:11.236Z",
+    "reasoning": "To ensure the Bedroom Main Light is off during typical sleep hours, preventing accidental energy consumption and contributing to overall home energy efficiency, aligning with user's energy-saving interest.",
+    "isActive": true
+  },
+  {
+    "id": "auto_routine_1756930091065",
+    "name": "Early Morning Fan On with AC",
+    "description": "Turns on the Bedroom Ceiling Fan at 5:00 AM daily, in conjunction with the Bedroom Air Conditioner, to enhance cooling efficiency and user comfort while saving energy.",
+    "schedule": {
+      "days": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "time": "05:00"
+    },
+    "actions": [
+      {
+        "command": "turnOn",
+        "applianceId": "fan1"
+      }
+    ],
+    "createdBy": "autonomous_ai",
+    "createdAt": "2025-09-03T20:08:11.065Z",
+    "reasoning": "To enhance cooling efficiency and user comfort by circulating air when the Bedroom Air Conditioner turns on in the morning, aligning with AI suggestions for AC and fan synergy to save energy.",
+    "isActive": true
+  },
+  {
+    "id": "routine_1756931769025",
+    "name": "Boddjdjasjd",
+    "description": "kjsadndsannds",
+    "schedule": {
+      "time": "12:00",
+      "days": [
+        "Monday"
+      ]
+    },
+    "actions": [
+      {
+        "applianceId": "bulb1",
+        "command": "turnOn"
+      }
+    ],
+    "createdBy": "manual",
+    "isActive": true,
+    "createdAt": "2025-09-03T20:36:09.023Z"
+  },
+  {
+    "id": "auto_routine_1756931797412",
+    "name": "Weekday AC Off",
+    "description": "Turns off the Bedroom Air Conditioner during weekday daytime hours to save energy.",
+    "schedule": {
+      "time": "09:00",
+      "days": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ]
+    },
+    "actions": [
+      {
+        "applianceId": "ac1",
+        "command": "turnOff"
+      }
+    ],
+    "createdBy": "autonomous_ai",
+    "createdAt": "2025-09-03T20:36:37.412Z",
+    "reasoning": "The Bedroom Air Conditioner is the top energy consumer, and weekday usage is significantly higher. This routine aims to reduce its power consumption during typical work hours when the user is likely out, aligning with energy-saving interests and budget management.",
+    "isActive": true
+  },
+  {
+    "id": "auto_routine_1756932678020",
+    "name": "Weekday Smart Switch Hub Off",
+    "description": "Turns off the Smart Switch Hub during weekday daytime hours (9 AM) to prevent phantom load and save energy, assuming it's not in active use.",
+    "schedule": {
+      "time": "09:00",
+      "days": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ]
+    },
+    "actions": [
+      {
+        "command": "turnOff",
+        "applianceId": "switch1"
+      }
+    ],
+    "createdBy": "autonomous_ai",
+    "createdAt": "2025-09-03T20:51:18.020Z",
+    "reasoning": "The Smart Switch Hub is the second highest energy consumer. A previous AI suggestion recommended powering it off during extended periods of inactivity, such as while at work. This routine aims to reduce its energy consumption and phantom load during weekday daytime hours when the user is likely out, aligning with the user's energy-saving interest and addressing the budget concern. This complements the existing \"Nighttime Smart Switch Hub Off\" and \"Weekday Living Room Lamp Off\" routines.",
+    "isActive": true
+  },
+  {
+    "id": "auto_routine_1756952312152",
+    "name": "Optimized Nighttime Cooling",
+    "description": "Turns off the Bedroom Air Conditioner and turns on the Bedroom Ceiling Fan at 3:00 AM to maintain comfort and save energy during late night hours.",
+    "schedule": {
+      "time": "03:00",
+      "days": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ]
+    },
+    "actions": [
+      {
+        "command": "turnOff",
+        "applianceId": "ac1"
+      },
+      {
+        "command": "turnOn",
+        "applianceId": "fan1"
+      }
+    ],
+    "createdBy": "autonomous_ai",
+    "createdAt": "2025-09-04T02:18:32.152Z",
+    "reasoning": "To balance user comfort with energy savings during deep sleep, by turning off the high-consuming AC later and immediately activating the low-power fan, aligning with AI suggestions for AC and fan synergy.",
+    "isActive": true
+  },
+  {
+    "id": "auto_routine_1756952312154",
+    "name": "Nighttime Study Lamp Off",
+    "description": "Turns off the Study Table Lamp at 11:00 PM daily to prevent accidental leaving on and save energy.",
+    "schedule": {
+      "days": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "time": "23:00"
+    },
+    "actions": [
+      {
+        "command": "turnOff",
+        "applianceId": "lamp1"
+      }
+    ],
+    "createdBy": "autonomous_ai",
+    "createdAt": "2025-09-04T02:18:32.154Z",
+    "reasoning": "To ensure the Study Table Lamp is not left on unnecessarily during typical non-usage hours, contributing to overall energy savings and aligning with general energy-saving practices.",
+    "isActive": true
+  },
+  {
+    "id": "auto_routine_1756952746488",
+    "name": "Weekday Morning Fan Off",
+    "description": "Turns off the Bedroom Ceiling Fan on weekday mornings to save energy after the user has likely left the bedroom.",
+    "schedule": {
+      "days": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "time": "09:00"
+    },
+    "actions": [
+      {
+        "command": "turnOff",
+        "applianceId": "fan1"
+      }
+    ],
+    "createdBy": "autonomous_ai",
+    "createdAt": "2025-09-04T02:25:46.488Z",
+    "reasoning": "The Bedroom Ceiling Fan is turned on in the early morning but lacks a routine to turn it off, leading to potential unnecessary energy consumption. This routine ensures it is turned off during weekday daytime hours when the user is likely out, aligning with energy-saving interests.",
+    "isActive": true
+  },
+  {
+    "id": "auto_routine_1756954251251",
+    "name": "Goodnight TV Off",
+    "description": "Turns off the Television at 11:00 PM daily to prevent phantom load and save energy, aligning with AI suggestions for reducing vampire power drain.",
+    "schedule": {
+      "time": "23:00",
+      "days": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ]
+    },
+    "actions": [
+      {
+        "applianceId": "XEWFE",
+        "command": "turnOff"
+      }
+    ],
+    "createdBy": "autonomous_ai",
+    "createdAt": "2025-09-04T02:50:51.251Z",
+    "reasoning": "To proactively prevent phantom load from the Television during typical non-usage hours, aligning with AI suggestions to power off non-essential devices before sleep and addressing the user's energy-saving interest.",
+    "isActive": true
+  },
+  {
+    "id": "auto_routine_1756966758425",
+    "name": "Evening Fan On for Comfort",
+    "description": "Turns on the Bedroom Ceiling Fan daily in the evening to enhance comfort and potentially reduce AC usage.",
+    "schedule": {
+      "time": "19:00",
+      "days": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ]
+    },
+    "actions": [
+      {
+        "command": "turnOn",
+        "applianceId": "fan1"
+      }
+    ],
+    "createdBy": "autonomous_ai",
+    "createdAt": "2025-09-04T06:19:18.425Z",
+    "reasoning": "To enhance user comfort and potentially reduce the need for immediate Air Conditioner usage during the evening hours by circulating air, aligning with the user's comfort preferences and energy-saving interest.",
+    "isActive": true
+  },
+  {
+    "id": "auto_routine_1756967973409",
+    "name": "Weekend Daytime Smart Switch Hub Off",
+    "description": "Turns off the Smart Switch Hub on weekend mornings to prevent phantom load and save energy, assuming it's not in active use.",
+    "schedule": {
+      "time": "09:00",
+      "days": [
+        "Saturday",
+        "Sunday"
+      ]
+    },
+    "actions": [
+      {
+        "applianceId": "XEWFE",
+        "command": "turnOff"
+      }
+    ],
+    "createdBy": "autonomous_ai",
+    "createdAt": "2025-09-04T06:39:33.409Z",
+    "reasoning": "The Smart Switch Hub (XEWFE) is the second highest energy consumer, and the user has a strong interest in energy saving and is projected to exceed their budget. There is an existing weekday routine to turn it off at 9 AM. Extending this to weekends will further reduce unnecessary energy consumption during typical non-usage hours, aligning with the AI's suggestion to turn off the Smart Switch Hub during non-usage hours. This will contribute to overall energy efficiency and budget management.",
+    "isActive": true
+  },
+  {
+    "id": "auto_routine_1756975747142",
+    "name": "Weekend Daytime AC Off with Fan On",
+    "description": "Turns off the Bedroom Air Conditioner and turns on the Bedroom Ceiling Fan on weekend mornings to save energy and maintain comfort.",
+    "schedule": {
+      "days": [
+        "Saturday",
+        "Sunday"
+      ],
+      "time": "09:00"
+    },
+    "actions": [
+      {
+        "command": "turnOff",
+        "applianceId": "ac1"
+      },
+      {
+        "applianceId": "fan1",
+        "command": "turnOn"
+      }
+    ],
+    "createdBy": "autonomous_ai",
+    "createdAt": "2025-09-04T08:49:07.142Z",
+    "reasoning": "To reduce energy consumption from the high-usage Bedroom Air Conditioner during weekend daytime hours when the user might be out or can rely on the fan for comfort, aligning with energy-saving goals and user preferences for AC and fan synergy.",
+    "isActive": true
+  }
+]

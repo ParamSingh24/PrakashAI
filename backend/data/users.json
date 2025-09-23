@@ -1,0 +1,72 @@
+[
+  {
+    "uid": "krishnasinghprojects",
+    "name": "Krishna Singh",
+    "email": "krishna@example.com",
+    "location": "Mumbai, India",
+    "monthlyBudget": 2500,
+    "preferences": {
+      "temperature": 24,
+      "autoMode": true,
+      "notifications": true
+    },
+    "dashboardData": {
+      "totalUsageKWh": 167.2022,
+      "totalCostINR": 686.01,
+      "projectedCostINR": 1244.14,
+      "topPowerConsumers": [
+        {
+          "name": "Bedroom Air Conditioner",
+          "usageKWh": 121.1707
+        },
+        {
+          "name": "switch1",
+          "usageKWh": 32.7637
+        },
+        {
+          "name": "Desktop Computer",
+          "usageKWh": 6.7538
+        },
+        {
+          "name": "Bedroom Ceiling Fan",
+          "usageKWh": 6.0957
+        },
+        {
+          "name": "Bedroom Main Light",
+          "usageKWh": 0.3079
+        }
+      ],
+      "suggestions": [
+        "Bedroom Air Conditioner is your highest energy consumer. Consider reducing its usage to save money."
+      ],
+      "aiInsights": [
+        "Could not retrieve AI suggestions at this time."
+      ],
+      "proactiveAiSuggestions": [
+        "Hey there, EcoSync here! Since your 'Bedroom Air Conditioner' is working hard, let's make sure it's in top shape. Consider getting it professionally serviced once a year! A well-maintained AC runs much more efficiently, uses less power, and saves you money in the long run. It's like a health check-up for your appliance!",
+        "Alright, let's get even smarter with 'switch1'! If it's a hub for multiple devices, how about setting up a 'Goodnight' or 'Leaving Home' routine? This way, with a single command, 'switch1' and all its connected gadgets can power down, eliminating any standby power drain and ensuring nothing is left on unnecessarily. Easy peasy automation!",
+        "For your 'Desktop Computer', my friend, let's set up a routine to automatically shut it down completely at a specific time each night, especially if you tend to leave it on. This ensures it's not consuming any power overnight and gives it a fresh start for the next day, boosting both energy savings and performance!"
+      ],
+      "lastUpdated": "2025-09-22T20:28:38.560Z",
+      "projectionAnalysis": {
+        "confidence_level": "high",
+        "insights": [
+          "Projected to stay within budget with ₹1255.86 remaining",
+          "Usage trend is increasing - consider energy-saving measures",
+          "Top energy consumers: Bedroom Air Conditioner, switch1, Desktop Computer"
+        ],
+        "usage_patterns": {
+          "avg_daily_usage": 11.1468,
+          "avg_weekday_usage": 11.4775,
+          "avg_weekend_usage": 10.2375,
+          "stable_avg_daily_usage": 9.6005,
+          "seasonal_multiplier": 1,
+          "trend_multiplier": 1.2,
+          "days_analyzed": 15,
+          "outliers_detected": 1
+        },
+        "last_calculated": "2025-09-22T20:28:36.390Z"
+      }
+    }
+  }
+]
