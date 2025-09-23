@@ -286,7 +286,7 @@ const runAutonomousAI = async () => {
 
 // --- Server Start ---
 const server = app.listen(port, () => {
-    console.log(`🚀 Ecosync Nexus server listening at http://localhost:${port}`);
+    console.log(`🚀 PrakashAI server listening at http://localhost:${port}`);
     console.log(`📊 Health check available at: http://localhost:${port}/health`);
 
     // Initialize routines file if it doesn't exist

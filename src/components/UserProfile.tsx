@@ -30,7 +30,7 @@ const UserProfile: React.FC = () => {
             ) : (
               <div className="relative">
                 <div className="h-12 w-12 bg-gradient-to-br from-primary to-secondary rounded-xl flex items-center justify-center shadow-lg glow-effect">
-                  <span className="text-white text-sm font-accent serif-optimized">ES</span>
+                  <span className="text-white text-sm font-accent serif-optimized">PAI</span>
                 </div>
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/30 to-secondary/30 rounded-xl blur-md -z-10"></div>
               </div>
@@ -40,11 +40,11 @@ const UserProfile: React.FC = () => {
                 Welcome, {currentUser?.displayName || currentUser?.email?.split('@')[0] || 'User'}
               </h1>
               <p className="text-sm text-dark-textSecondary font-body serif-optimized">
-                Ecosync Nexus Platform
+                PrakashAI Platform
               </p>
             </div>
           </div>
-          
+
           <div className="flex items-center space-x-4">
             {currentUser?.email && (
               <div className="hidden md:flex items-center space-x-2 px-3 py-2 rounded-xl bg-dark-surface/20 border border-dark-surface/30 backdrop-blur-sm">

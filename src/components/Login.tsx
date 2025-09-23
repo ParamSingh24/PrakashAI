@@ -51,7 +51,7 @@ const Login: React.FC<LoginProps> = ({ onToggleMode }) => {
             <span className="text-white text-2xl font-bold">ES</span>
           </div>
           <h2 className="text-3xl font-heading text-dark-text serif-optimized text-shadow">Welcome Back</h2>
-          <p className="mt-2 text-sm text-dark-textSecondary serif-optimized">Sign in to your Ecosync Nexus account</p>
+          <p className="mt-2 text-sm text-dark-textSecondary serif-optimized">Sign in to your PrakashAI account</p>
         </div>
         
         <form className="mt-8 space-y-6 glass rounded-2xl p-8 shadow-2xl border border-dark-surface/30" onSubmit={handleSubmit}>

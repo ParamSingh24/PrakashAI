@@ -1,15 +1,28 @@
-# Prakash AI - Intelligent Smart Home Energy Management System
-
 <div align="center">
-  <h3>🏠 AI-Powered Smart Home Automation & Energy Optimization</h3>
-  <p>Advanced machine learning algorithms for intelligent energy management and automated routine creation</p>
+  <h1>🏠 PrakashAI - Intelligent Smart Home Energy Management System</h1>
+  <h3>🧠 AI-Powered Smart Home Automation & Energy Optimization</h3>
+  <p>🤖 Advanced machine learning algorithms for intelligent energy management and automated routine creation</p>
+  
+  <p>
+    🎤 <strong>Multilingual Voice Assistant</strong> • 
+    📊 <strong>Predictive Analytics</strong> • 
+    🔄 <strong>Autonomous Routines</strong> • 
+    ⚡ <strong>Real-time Optimization</strong> • 
+    🌍 <strong>Environmental Impact</strong> • 
+    📱 <strong>Mobile Ready</strong>
+  </p>
+  
+  <p>
+    <strong>🔮 Powered by Google Gemini AI</strong> | 
+    <strong>⚛️ React 18 + TypeScript</strong> | 
+    <strong>🚀 Node.js Backend</strong> | 
+    <strong>🎨 Tailwind CSS</strong>
+  </p>
 </div>
 
 ---
 
-## 🧠 Our AI Technology
-
-**Prakash AI** is powered by our proprietary artificial intelligence system that combines multiple machine learning models to create the most intelligent smart home experience:
+**PrakashAI** is powered by our proprietary artificial intelligence system that combines multiple machine learning models to create the most intelligent smart home experience:
 
 ### 🤖 Core AI Features
 

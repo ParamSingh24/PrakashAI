@@ -77,7 +77,7 @@ const Navbar: React.FC = () => {
                 <div className="absolute inset-0 bg-primary/20 rounded-xl blur-md group-hover:bg-primary/40 transition-all duration-300"></div>
               </div>
               <span className="text-xl font-heading text-dark-text group-hover:text-primary transition-colors serif-optimized tracking-tight text-shadow">
-                Ecosync Nexus
+                PrakashAI
               </span>
             </Link>
           </div>

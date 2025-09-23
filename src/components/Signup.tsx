@@ -62,7 +62,7 @@ const Signup: React.FC<SignupProps> = ({ onToggleMode }) => {
             <span className="text-white text-2xl font-bold">ES</span>
           </div>
           <h2 className="text-3xl font-heading text-dark-text serif-optimized text-shadow">Create Account</h2>
-          <p className="mt-2 text-sm text-dark-textSecondary serif-optimized">Join the Ecosync Nexus platform</p>
+          <p className="mt-2 text-sm text-dark-textSecondary serif-optimized">Join the PrakashAI platform</p>
         </div>
         
         <form className="mt-8 space-y-6 glass rounded-2xl p-8 shadow-2xl border border-dark-surface/30" onSubmit={handleSubmit}>
